@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos y Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Microservicios</h1>
+    <main>
+        <section>
+            <h2>Inventario</h2>
+            <div>
+                <input type="text" id="nombreProducto" placeholder="Nombre del Producto">
+                <input type="number" id="precioProducto" placeholder="Precio">
+                <input type="number" id="stockProducto" placeholder="Stock">
+                <button onclick="crearProducto()">Crear Producto</button>
+            </div>
+            <div id="productos" class="lista-productos"></div>
+        </section>
+
+        <section>
+            <h2>Carrito</h2>
+            <div>
+                <input type="text" id="productosPedido" placeholder="Productos (ej. Producto1)">
+                <input type="number" id="cantidadPedido" placeholder="Cantidad">
+                <button onclick="crearPedido()">Crear Pedido</button>
+            </div>
+            <div id="pedidos" class="lista-pedidos"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
